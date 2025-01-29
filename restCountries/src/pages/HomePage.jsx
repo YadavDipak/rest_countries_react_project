@@ -1,18 +1,18 @@
-import React from 'react'
-import FilterContainer from "../components/FilterContainer"
-import Cards from "../components/Cards"
-import { useTheme } from '../context/ThemeContext'
+import Cards from "../components/Cards";
+import { useTheme } from "../context/ThemeContext";
+import FilterContainer from "../components/FilterContainer";
 
 const HomePage = () => {
-    // Theme
-    const { theme } = useTheme();
+  const { theme } = useTheme();
 
-    return (
-        <div className={`${theme.mainBackground} ${theme.textColor} font-sans min-h-screen`}>
-            <FilterContainer />
-            <Cards />
-        </div>
-    );
-}
+  return (
+    <div
+      className={`${theme.mainBackground} ${theme.textColor} font-sans min-h-screen`}
+    >
+      <FilterContainer />
+      <Cards />
+    </div>
+  );
+};
 
-export default HomePage
+export default HomePage;
